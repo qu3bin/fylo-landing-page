@@ -1,0 +1,427 @@
+:root {
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+    --bright-blue: hsl(224, 93%, 58%);
+    --bright-blue-hover: hsl(224, 100%, 69%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+    --moderate-cyan-hover: hsl(170, 57%, 61%);
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+    --white: hsl(0, 0%, 100%);
+    --body-font: 'Open Sans', sans-serif;
+    --head-font: 'Raleway', sans-serif;
+}
+
+body {
+    align-items: center;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--body-font);
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 1.5rem 3rem;
+}
+
+.header-logo {
+    width: 25%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    font-size: .8rem;
+    gap: 1.1rem;
+}
+
+/* FEATURES */
+#features {
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.features-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 1.8rem 0;
+}
+
+.features-text {
+    font-size: .9rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.features-input, .features-btn {
+    border-radius: 5px;
+    display: block;
+    font-size: .9rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.curve-mobile, .curve-desktop {
+    width: 100%;
+}
+
+/* TEAM */
+#team {
+    background-color: var(--light-grayish-blue);
+    padding: 6rem 1.5rem;
+}
+
+.team-article {
+    text-align: center;
+}
+
+.team-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 6rem 0 2rem;
+}
+
+.team-text {
+    font-size: .9rem;
+    line-height: 1.5;
+    margin-bottom: 1.8rem;
+    text-align: left;
+}
+
+.see-how {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.team-anchor {
+    border-bottom: 2px solid var(--moderate-cyan);
+    color: var(--moderate-cyan);
+    font-size: .9rem;
+}
+.team-anchor:hover {
+    color: var(--moderate-cyan-hover);
+}
+
+.team-arrow {
+    height: 1.1rem;
+}
+
+.testimonial {
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px var(--light-gray);
+    margin: 3rem 1rem;
+    padding: 2rem;
+}
+
+.testimonial-text {
+    font-size: .75rem;
+    line-height: 1.75;
+    margin: .75rem 0;
+}
+
+.testimonial-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.testimonial-avatar {
+    border-radius: 50px;
+    width: 2rem;
+}
+
+.testimonial-person {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.testimonial-name {
+    font-size: .75rem;
+    font-weight: 700;
+}
+
+.testimonial-position {
+    font-size: .5rem;
+}
+
+/* SIGN IN */
+#signin {
+    background-color: var(--desaturated-blue);
+    color: var(--white);
+    padding: 3.5rem 2.5rem 5rem;
+    text-align: center;
+}
+
+.signin-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.signin-text {
+    font-size: .9rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.signin-input, .signin-btn {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    font-size: .7rem;
+    margin-bottom: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--very-dark-blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 4rem;
+    padding: 3rem 2rem 2.5rem;
+}
+
+.footer-logo {
+    filter: brightness(0) invert(1);
+    margin-bottom: 1.5rem;
+    width: 55%;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-column span {
+    display: inline-block;
+}
+
+.footer-column p {
+    display: flex;
+    gap: 1.25rem;
+    align-items: baseline;
+}
+
+footer a:hover {
+    color: var(--bright-blue-hover);
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.fa-brands {
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    display: flex;
+    text-align: center;
+    padding: .5rem;
+    height: 2rem;
+    width: 2rem;
+}
+.fa-brands:hover {
+    border: 1px solid var(--bright-blue-hover);
+    color: var(--bright-blue-hover);
+    cursor: pointer;
+}
+
+/* MULTIPLE ASSIGNMENTS */
+.container {
+    max-width: 375px;
+    width: 100%;
+}
+
+.head {
+    font-family: var(--head-font);
+}
+
+input {
+    border: 1px solid black;
+    padding: .8rem 1.5rem;
+}
+
+button {
+    background-color: var(--bright-blue);
+    color: var(--white);
+    padding: 1rem;
+}
+button:hover {
+    background-color: var(--bright-blue-hover);
+    cursor: pointer;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 920px) and (max-width: 1314px) {
+    .container {
+        max-width: 70vw;
+    }
+    footer {
+        justify-content: center;
+    }
+    .footer-logo {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1315px) {
+    .container {
+        max-width: 100vw;
+    }
+    header {
+        padding: 5rem 6rem;
+    }
+    .header-logo {
+        width: 14%;
+    }
+    nav ul {
+        font-size: 1.1rem;
+        gap: 4.5rem;
+    }
+    #features {
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+        padding: 0 6rem 12rem;
+        text-align: left;
+    }
+    .illus1 {
+        width: 50%;
+    }
+    .features-title {
+        font-size: 2.75rem;
+    }
+    .features-text {
+        font-size: 1.2rem;
+        margin-right: 1rem;
+    }
+    .features-input {
+        display: inline;
+        margin-right: 1rem;
+        width: 52%;
+    }
+    .features-btn {
+        display: inline;
+        width: 32%;
+    }
+    #team {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 0 6rem 12rem;
+    }
+    .illus2 {
+        height: 100%;
+        width: 42%;
+    }
+    .team-article {
+        text-align: left;
+    }
+    .team-title {
+        font-size: 2.75rem;
+    }
+    .team-text {
+        font-size: 1.1rem;
+        width: 73%;
+    }
+    .see-how {
+        justify-content: flex-start;
+    }
+    .team-anchor {
+        font-size: 1.1rem;
+    }
+    .testimonial {
+        margin: 3rem 0;
+        width: 48%;
+    }
+    .testimonial-text {
+        font-size: .95rem;
+    }
+    .testimonial-footer {
+        gap: 8px;
+    }
+    .testimonial-avatar {
+        width: 2.3rem;
+    }
+    .testimonial-name {
+        font-size: .8rem;
+    }
+    .testimonial-position {
+        font-size: .6rem;
+    }
+    #signin {
+        display: flex;
+        flex-direction: row;
+        gap: 18%;
+        padding: 7rem 6rem 5rem;
+        text-align: left;
+        align-items: center;
+    }
+    .signin-col1 {
+        width: 42%;
+    }
+    .signin-col2 {
+        width: 40%;
+    }
+    .signin-title {
+        font-size: 2.2rem;
+        margin-bottom: 1.75rem;
+    }
+    .signin-text {
+        font-size: 1.15rem;
+    }
+    .signin-input {
+        font-size: .8rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1.2rem 1.5rem;
+        width: 93%;
+    }
+    .signin-btn {
+        font-size: .9rem;
+        font-weight: 700;
+        margin-left: 0;
+        margin-right: 0;
+        width: 38%;
+    }
+    footer {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+        padding: 7rem 6rem 5rem;
+    }
+    .footer-logo {
+        margin-bottom: 0;
+        width: 80%;
+    }
+    .footer-column p {
+        font-size: 1.1rem;
+    }
+    footer ul, #socials {
+        font-size: 1.1rem;
+        margin-top: 5rem;
+    }
+    #socials {
+        margin-right: 12rem;
+    }
+}
